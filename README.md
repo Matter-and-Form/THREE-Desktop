@@ -6,6 +6,9 @@ meshing, texturing, aligning, merging, project management -- runs on your comput
 
 This repository hosts **downloads and bug reports** for the beta program.
 
+New to GitHub?  Read the [Beta Tester Guide (PDF)](THREE-Desktop-Beta-Guide.pdf) --
+it walks through downloading, installing, and reporting bugs step by step.
+
 ## Download
 
 Grab the latest installer from the [Releases](../../releases) page:
