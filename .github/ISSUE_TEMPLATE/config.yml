@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions, orders, and everything that isn't a bug
+    url: mailto:info@matterandform.net
+    about: Email Matter and Form support directly.

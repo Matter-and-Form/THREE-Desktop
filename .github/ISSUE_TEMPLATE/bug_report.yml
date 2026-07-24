@@ -1,0 +1,73 @@
+name: Bug report
+description: Something in THREE Desktop is broken or behaving unexpectedly
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: THREE Desktop version
+      description: Shown in the installer filename and in the app.
+      placeholder: e.g. 0.9.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - Linux (AppImage)
+        - Linux (deb / apt)
+    validations:
+      required: true
+
+  - type: input
+    id: system
+    attributes:
+      label: System
+      description: OS version, CPU, RAM, GPU.
+      placeholder: e.g. Windows 11 23H2, Ryzen 7 5800X, 32 GB, RTX 3060
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Connect to the scanner
+        2. ...
+        3. ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Exported logs
+      description: >
+        In the app go to Menu, then Export Logs, and drag the resulting zip
+        file into this field.  If the app cannot start at all, say so here
+        instead.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Sometimes
+        - Happened once
+    validations:
+      required: false
